@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+body {
+    display: flex;
+}
+
+.c2 {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    background-image: url('img.png');
+    background-size: cover; 
+    background-position: center; 
+    box-sizing: border-box;
+}
+
+.c1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+}
+
+
+.form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 351px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 14px; 
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 384px;
+    height: 53px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+}
+
+.botao {
+    background-color: #9747FF;
+    color: white;
+    font-weight: bold;
+    width: 384px;
+    height: 53px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.texto2 {
+    margin-top: -20px;
+}
+
+span {
+    color: #9747FF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.senha-container {
+    display: flex;
+    align-items: center;
+  }
+  
+.esqueceu-senha {
+    font-weight: bold;
+    margin-left: 220px; 
+    font-size: 14px; 
+    color: #9747FF; 
+    text-decoration: none; 
+  }
+
+/* Erro */
+
+.error-message {
+  color: red;
+  margin-bottom: 5px;
+  display: none;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 900px) {
+    body {
+        flex-direction: column; 
+    }
+
+    .c1 {
+        padding: 20px; 
+    }
+
+    .form {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    input {
+        width: 340px; 
+    }
+
+    .botao {
+        width: 340px; 
+    }
+
+    .texto2 {
+        width: 340px;
+    }
+
+    .c2 {
+        display: none;
+    }
+
+    .error-message {
+        width: 340px;
+    }
+
+    .senha-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin-left: 0; 
+    }
+
+    .esqueceu-senha {
+        margin-top: 10px; 
+        margin-left: 0; 
+    }
+}

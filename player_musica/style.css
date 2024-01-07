@@ -1,0 +1,189 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0F0D13;
+}
+
+.geral {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+/* Card 1 */
+
+.card {
+    width: 266.48px;
+    height: 498px;
+    background-color: #2A2141;
+    top: 66px;
+    left: 191px;
+    border-radius: 9.6px;
+    gap: 28.81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 189.66px;
+    height: 189.66px;
+    border-radius: 6px;
+}
+
+.card_1_titulo {
+    width: 189.66px;
+    height: 52.6px;
+    gap: 9.6px;
+}
+
+.card_1_titulo h2 {
+    color: #E1E1E6;
+    width: 171px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card_1_titulo p {
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E1E1E6;
+}
+
+.card_box {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card_play img {
+    width: 189.66px;
+    height: 28.81px;
+    gap: 50.42px;
+}
+
+.card_tempo_musica img {
+    width: 189.66px;
+    height: 38.6px;
+}
+
+/* Card 2 e 3*/
+
+.cards2e3 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card2 {
+    width: 357.71px;
+    height: 266.68px;
+    top: 66px;
+    left: 489.48px;
+    border-radius: 9.6px;
+    background-color: #2A2141;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img2 {
+    width: 300.09px;
+    height: 84.03px;
+    gap: 28.81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img2 img {
+    width: 84.03px;
+    height: 84.03px;
+    border-radius: 6px;
+}
+
+.card_2_titulo h2 {
+    width: 171px;
+    height: 24px;
+    color: #E1E1E6;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card_2_titulo p {
+    width: 155px;
+    height: 19px;
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E1E1E6;
+}
+
+.card_play2 img {
+    width: 300.09px;
+    height: 28.81px;
+    gap: 50.42px;
+    
+}
+
+.card_tempo_musica2 img {
+    width: 300.09px;;
+    height: 38.6px;
+    gap: 9.6px;
+}
+
+.card3 {
+    width: 357.71px;
+    height: 199.26px;
+    top: 364.68px;
+    left: 489.48px;
+    border-radius: 9.6px;
+    background-color: #2A2141;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Responsividade */
+
+ 
+@media screen and (max-width: 768px) {
+    .geral {
+        flex-direction: column; 
+    }
+
+    .card{
+        margin-top: 500px;
+        padding: 20px;
+    }
+
+    .card3 {
+        margin-bottom: 30px;
+    }
+}

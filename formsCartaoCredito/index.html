@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="form">
+        <div class="container">
+            <div class="card">
+                <div class="form">
+                    <div class="campos">
+                        <label for="cardName">Nome no cartão</label>
+                        <input class="input" type="text" id="cardName" name="cardName" placeholder="Nome no cartão">
+                        <p id="cardNameError" class="error-message"></p>
+                    
+                        <label for="cardHolder">Nome do titular</label>
+                        <input class="input" type="text" id="cardHolder" name="cardHolder" placeholder="Nome do titular">
+                        <p id="cardHolderError" class="error-message"></p>
+                        
+                        <div class="card2">
+                            <div class="validade">
+                                <label class="label2" for="expiryDate">Validade</label>
+                                <input class="input2" type="text" id="expiryDate" name="expiryDate" placeholder="mm/yy">
+                                <p id="expiryDateError" class="error-message"></p>
+                            </div>
+                            <div class="cw">
+                                <label for="cw">CW</label>
+                                <input class="input2" type="text" id="cw" name="cw" placeholder="    ...">
+                                <p id="cwError" class="error-message"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <img src="Cartão.png" alt="">
+                </div>
+            </div>
+            <div class="botao">
+                <button id="submitButton" type="submit">Adicionar cartão</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

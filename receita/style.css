@@ -1,0 +1,221 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.box1 {
+    height: 50%;
+    background-color: #FEECE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1-card {
+    width: 1070px;
+    height: 293px;
+    display: flex;
+    flex-direction: row;
+}
+
+.titles {
+    color: #58190A;
+    margin-left: 56px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.t1 {
+    margin: 0;
+    color: #58190A;
+    font-size: 72px;
+    font-weight: bolder;
+}
+
+.t2 {
+    color: #58190A;
+    font-size: 38px;
+}
+
+.porcoes {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    gap: 20px;
+}
+
+.porcoes img {
+    cursor: pointer;
+}
+
+.porcoes #numero {
+    color: #9B6647;
+    font-size: 30px;
+}
+
+.t3 {
+    color: #9B6647;
+    font-size: 35px;
+}
+
+
+.box2 {
+    height: 50%;
+    background-color: #9B6647;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-textos {
+    display: flex;
+    display: flex;
+    gap: 100px;
+}
+
+.c-ingredientes {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-ingredientes{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.titulo-ingredientes img {
+    width: 30px;
+    height: 25px;
+    margin-right: 8px;
+    margin-top: 23px;
+}
+
+.ingredientes p {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.c-modo-preparo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-preparo {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.titulo-preparo img {
+    width: 30px;
+    height: 25px;
+    margin-right: 8px;
+    margin-top: 23px;
+}
+
+.texto p {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 {
+        height: 700px;
+    }
+
+    .box1-card {
+        display: flex;
+        flex-direction: column; 
+        height: 600px;
+    }
+
+
+    .box2 {
+        height: 700px;
+    }
+
+    
+    .titles {
+        margin-left: 20px; 
+        text-align: center; 
+    }
+    
+    .t1 {
+        font-size: 36px;
+    }
+    
+    .t2 {
+        font-size: 24px;
+    }
+    
+    .porcoes {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+    
+    .porcoes img {
+        width: 20px; 
+        height: 20px;
+    }
+    
+    .porcoes #numero {
+        font-size: 24px; 
+    }
+    
+    .t3 {
+        font-size: 28px; 
+    }
+    
+    .container-textos {
+        margin-top: 15px;
+        flex-direction: column; 
+        gap: 40px; 
+    }
+    
+    .titulo-ingredientes,
+    .titulo-preparo {
+        font-size: 14px; 
+    }
+    
+    .titulo-ingredientes img,
+    .titulo-preparo img {
+        width: 20px; 
+        height: 20px;
+        margin-top: 25px;
+    }
+    
+    .ingredientes p,
+    .texto p {
+        font-size: 16px; 
+    }
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Básico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+      <div class="headerPessoa">
+        <div class="fotoNomeX">
+            <div class="fotoNome">
+                <img class="foto" src="Foto.png" alt="">
+                <div class="nomeOnline">
+                    <div class="nome">
+                        Cecília Sassaki
+                    </div>
+                    <div class="online">
+                        Online
+                    </div>
+                </div>
+            </div>
+            <div class="close">
+                <button><img src="close.png" alt=""></button>
+            </div>
+        </div>
+      </div>
+      <div class="timeInicial">
+        Hoje 11:30
+      </div>
+      <div class="chat-box" id="chat-box">
+        <div class="message received">
+            <div class="message-content">
+              <span class="time">Cecília - 11:30</span>
+              <span class="content">Tive uma ideia incrível para um projeto! 😍</span>
+            </div>
+          </div>
+          <div class="message sent">
+            <div class="message-content">
+              <span class="time">Você - 11:32</span>
+              <span class="content">Sério? Me conta mais.</span>
+            </div>
+          </div>
+          <div class="message received">
+            <div class="message-content">
+              <span class="time">Cecília - 11:30</span>
+              <span class="content">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</span>
+            </div>
+          </div>
+          <div class="message sent">
+            <div class="message-content">
+              <span class="time">Você - 11:32</span>
+              <span class="content">#boraCodar! 🚀</span>
+            </div>
+          </div>
+        </div>
+      <div class="input-container">
+        <input class="input-msg" type="text" id="message-input" placeholder="Digite sua mensagem...">
+        <button onclick="sendMessage()"><img src="send.png" alt=""></button>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
